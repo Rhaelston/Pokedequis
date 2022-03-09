@@ -12,6 +12,12 @@ export type pokeProps ={
     id: number;
     key: number;
     onClick: () => void;
+    types?: TypeProps[];
+}
+type TypeProps = {
+    type: {
+        name: string;
+    }
 }
 
 export function PokeCard(props: pokeProps){
@@ -19,7 +25,7 @@ export function PokeCard(props: pokeProps){
         <PokeCardC onClick={props.onClick}>
         <span>{props.id}</span>
         <img src={props.sprites.front_default} alt={props.name}/>
-        <span>{props.name}</span>
+        <p>{props.name}</p>
         </PokeCardC>
     )
 }
