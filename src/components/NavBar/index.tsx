@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { api } from "../services/api";
+import { api } from "../../services/api";
 import { Container } from "./styles";
-import Icon  from "../assets/icon.png"
+import Icon  from "../../assets/icon.png"
 
 type navbarProps = {
     onSearch: (searchTerm:string) => void

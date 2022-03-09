@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { NavBar } from "../../NavBar";
+import { NavBar } from "../NavBar";
 import { PokeCard, pokeProps } from "../PokeCard";
 import { Container } from "./styles";   
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
